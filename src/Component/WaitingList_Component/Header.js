@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Header = () => {
+const Header = ({ lang, setLang }) => {
   return (
     <div className="w-full ">
       <header className="flex flex-row content-center justify-between">
@@ -12,7 +12,8 @@ const Header = () => {
                 className="hover:after:absolute hover:after:rounded-[10px] hover:after:bottom-[-13px] hover:after:block hover:after:bg-[#6dad04] hover:after:w-full hover:after:h-[2px]"
                 href="/"
               >
-                About
+                {lang === "en" && "About"}
+                {lang === "fn" && "À propos"}
               </a>
             </li>
             <li className="relative h-full ">
@@ -20,7 +21,8 @@ const Header = () => {
                 className="hover:after:absolute hover:after:rounded-[10px] hover:after:bottom-[-13px] hover:after:block hover:after:bg-[#6dad04] hover:after:w-full hover:after:h-[2px]"
                 href="/"
               >
-                Features
+                {lang === "en" && "Features"}
+                {lang === "fn" && "Fonctionnalités"}
               </a>
             </li>
             <li className="relative h-full ">
@@ -28,7 +30,8 @@ const Header = () => {
                 className="hover:after:absolute hover:after:rounded-[10px] hover:after:bottom-[-13px] hover:after:block hover:after:bg-[#6dad04] hover:after:w-full hover:after:h-[2px]"
                 href="/"
               >
-                Download
+                {lang === "en" && "Download"}
+                {lang === "fn" && "Téléchargement"}
               </a>
             </li>
           </ul>
@@ -48,7 +51,8 @@ const Header = () => {
             className=" mr-4 outline-none bg-[#6dad04] rounded-[4px] font-semibold px-4 py-1 hover:bg-transparent hover:border-2 hover:border-[#6dad04] hover:text-[#e6e9ed] transition-all"
             type="Submit"
           >
-            Log In
+            {lang === "en" && "Log In "}
+            {lang === "fn" && "Connexion"}
           </button>
           <i className="fa-solid fa-cart-shopping cursor-pointer text-[#e6e9ed]"></i>
         </div>
