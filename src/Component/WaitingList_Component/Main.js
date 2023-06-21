@@ -44,7 +44,7 @@ const Main = ({ lang, setLang }) => {
       <div className="mt-[80px] text-white px-[90px] max-sm:px-[0px] max-md:px-[0px]">
         <a className="cursor-pointer" href="/">
           {lang === "en" && (
-            <h1 className="font-extrabold text-white text-center text-5xl max-sm:text-3xl max-md:text-4xl ">
+            <h1 className="text-5xl font-extrabold text-center text-white max-sm:text-3xl max-md:text-4xl ">
               WE
               <span className="font-extrabold text-[#6dad04] border-2 border-[#6dad04] px-1 ml-1">
                 BUY
@@ -54,14 +54,14 @@ const Main = ({ lang, setLang }) => {
           )}
 
           {lang === "fn" && (
-            <h1 className="font-extrabold text-white text-center text-5xl max-sm:text-3xl max-md:text-4xl ">
+            <h1 className="text-5xl font-extrabold text-center text-white max-sm:text-3xl max-md:text-4xl ">
               NOUS ACHETONS sera bientôt lancé...
             </h1>
           )}
         </a>
 
         {lang === "en" && (
-          <p className="font-semibold text-lg max-sm:text-base max-md:text-lg text-center mt-6 max-sm:text-left max-sm:mt-3">
+          <p className="mt-6 text-lg font-semibold text-center max-sm:text-base max-md:text-lg max-sm:text-left max-sm:mt-3">
             Getting groceries and foodstuff doesn't have to be so
             <span className="text-[#6dad04] border-2 border-[#6dad04] ml-3 p-1 text-2xl max-sm:text-lg font-extrabold hover:border-none hover:underline hover:decoration-wavy hover:decoration-[#6dad04] hover:decoration-2 transition-all">
               difficult and expensive
@@ -74,7 +74,7 @@ const Main = ({ lang, setLang }) => {
         )}
 
         {lang === "fn" && (
-          <p className="font-semibold text-lg max-sm:text-base max-md:text-lg text-center mt-6 max-sm:text-left max-sm:mt-3">
+          <p className="mt-6 text-lg font-semibold text-center max-sm:text-base max-md:text-lg max-sm:text-left max-sm:mt-3">
             Acheter des courses et des produits alimentaires ne doit pas être si
             <span className="text-[#6dad04] border-2 border-[#6dad04] ml-3 p-1 text-2xl max-sm:text-lg font-extrabold hover:border-none hover:underline hover:decoration-wavy hover:decoration-[#6dad04] hover:decoration-2 transition-all">
               difficile et coûteux
@@ -87,7 +87,7 @@ const Main = ({ lang, setLang }) => {
           </p>
         )}
 
-        <div className="flex content-center justify-center mt-4 gap-1">
+        <div className="flex content-center justify-center gap-1 mt-4">
           <button
             className="mt-2 transition-all bg-[#6dad04] px-8 py-2 max-sm:px-4 font-semibold rounded-md hover:border-2 border-[#6dad04] hover:bg-transparent max-sm:text-sm max-md:text-base"
             type="button"
@@ -102,7 +102,7 @@ const Main = ({ lang, setLang }) => {
             type="button"
             onClick={() => setJoin(true)}
           >
-            Join a Group
+            Join Wait-list
             <i className="ml-1 fa-solid fa-user-group"></i>
           </button>
 
